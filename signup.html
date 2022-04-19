@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signup</title>
+    <script type="text/javascript" src="validation.js"> 
+
+    </script>
+
+</head>
+<body bgcolor="#60A3D9">
+    <font color="blue" size="5">
+        <p>create your account here.</p>
+    </font>
+    
+    <form action="signup.html" method="post" name="signup" onsubmit="validationsignup()">
+        <p>please enter your details.</p>
+        <p>first name:</p>
+        <input type="textbox" name="fname" />
+        <p>last name:</p>
+        <input type="textbox" name="lname"/>
+        <p>gender:</p>
+        <input type="radio" name="rd_gen" value="Female" >Female
+        <input type="radio" name="rd_gen" value="male" >male
+        <p>e-mail:</p>
+        <input type="email" name="txtsin_email"/>
+        <p>select department:</p>
+        <select name="s_dept">
+            <option value="sel_SQ">--select--</option>
+            <option value="CSE">CSE</option>
+            <option value="ECE">ECE</option>
+            <option value="EEE">EEE</option>
+            <option value="MECH">MECH</option>
+            <option value="SH">SH</option>
+        </select>
+        <P>STUDENT BATCH:</P>
+        <select name="s_batch">
+        <option value="">--select--</option>
+        <option value="2010">2010-14</option>
+        <option value="2011">2011-15</option>
+        <option value="2012">2012-16</option>
+        <option value="2013">2013-17</option>
+        <option value="2014">2014-18</option>
+        <option value="2015">2015-19</option>
+    </select>
+    <p>password:</p>
+    <input type="password" name="s_password"/>
+    <p>Re-enter password:</p>
+    <input type="password" name="s_rpassword"/>
+    <p>mobile no:</p>
+    <input type="number" name="s_mno"/>
+    <p>DOB:</p>
+    <input type="date" name="s_dob" >
+    <br><br>
+    Remarks<br>
+    <textarea input type="text" name="t_add" wrap="physical" cals="45" rows="5" title="address should no exclude 100 charaters !!"></textarea>
+     
+    <br>
+    <br>
+    <input type="submit" id="submitMain" name="submitMain" value="submit"/>
+    &nbsp;&nbsp;&nbsp;
+    <input type="reset" id="btnreset" name="btnreset" value="Reset"/>
+    </form>
+                     
+    
+</body>
+</html>
